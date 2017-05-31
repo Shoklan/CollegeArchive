@@ -1,0 +1,4 @@
+@ECHO OFF
+DOSKEY/INSERT
+PATH= c:\jdk1.6.0_14\bin;.;
+SET CLASSPATH=.;C:\jdk1.6.0_14\bin

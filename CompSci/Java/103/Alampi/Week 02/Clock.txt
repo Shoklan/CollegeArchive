@@ -1,0 +1,10 @@
+Line 6: myClock: 05:04:30
+Line 9: yourClock: 00:00:00
+Line 13: After setting - yourClock: 05:45:16
+Line 19: The two times are not equal
+Line 20: Enter hours: 
+Line 24: Enter minutes: 
+Line 28: Enter seconds: 
+Line 33: New myClock: 11:22:59
+Line 37: After incrementing the clock by one second, myClock: 11:23:00
+Line 41: After copying myClock: into yourClock; yourClock: 11:23:00

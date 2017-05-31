@@ -1,0 +1,24 @@
+int channel = 0
+
+PRINT "Please enter a TV Channel number: "
+PRINT "\N"
+READ channel
+
+SELECT (channel)
+	CASE channel = 2
+		PRINT channel + ": WCBS"
+	CASE channel = 4
+		PRINT channel + ": SNBC"
+	CASE channel = 5
+		PRINT channel + ": WNEW"
+	CASE channel = 7
+		PRINT channel + ": WABC"
+	CASE channel = 9
+		PRINT channel + ": WOR"
+	CASE channel = 11
+		PRINT channel + ": WPIX"
+	CASE channel = 13
+		PRINT channel + ": WNET"
+	OTHERWISE
+		PRINT channel + " Not Available"
+ENDCASE SELECT

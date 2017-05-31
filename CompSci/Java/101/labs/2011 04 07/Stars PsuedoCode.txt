@@ -1,0 +1,16 @@
+//*************************************************************************
+//   Author: Collin Mitchell
+//   Course: CSC 101
+//   Instructor: John Alampi
+//   Class: Stars Psuedocode
+//   Due Date: April 7th, 2011
+//*************************************************************************
+
+MAX_ROWS = 10
+
+loop FOR row = 1 to MAX_ROWS STEP 1
+    loop FOR star = 1 to row STEP 1
+        Print "*"
+    END LOOP
+    PRINT a blank line
+END LOOP

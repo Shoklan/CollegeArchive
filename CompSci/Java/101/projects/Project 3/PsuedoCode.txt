@@ -1,0 +1,72 @@
+//*************************************************************************
+//   Author: Collin Mitchell
+//   Course: CSC 101
+//   Instructor: John Alampi
+//   Class: CMitc3 PsuedoCode
+//   Due Date: March 31st, 2011
+//*************************************************************************
+
+ROCK = 1
+PAPER = 2
+SCISSORS = 3
+OPTIONS = 3
+COMPUTER = 1
+PLAYER = 2
+TIE = 3
+
+playerChoice = 0
+winner = -1
+wins = 0
+losses = 0
+ties = 0
+computerChoice = Random number between ROCK and OPTIONS
+
+LOOP WHILE(playerChoice is less than ROCK or more than OPTIONS inclusive)
+	PRINT "Enter your choice - (" + ROCK + " for Rock," + PAPER + " for Paper, and " + SCISSORS + " for Scissors)?"
+	GET playerChoice
+END LOOP
+
+PRINT Two Blank Lines
+SELECT(computerChoice){
+	CASE computerChoice == ROCK
+		PRINT "The computers choice was Rock"
+		IF(playerChoice is ROCK)
+			winner = TIE
+		ELSE IF(playerChoice == PAPER)
+			winner = PLAYER
+		ELSE
+			winner = COMPUTER
+		ENDIF
+
+	CASE computerChoice = PAPER
+		PRINT "The computers choice was Paper"
+			IF(playerChoice == ROCK)
+				winner = COMPUTER
+			ELSE IF(playerChoice == PAPER)
+				winner = TIE
+			ELSE
+				winner = PLAYER
+			ENDIF
+
+	CASE computerChoice = SCISSORS
+		PRINT "The computers choice was Scissors"
+			IF(playerChoice == ROCK)
+				winner = PLAYER
+			ELSE IF(playerChoice == PAPER)
+				winner = COMPUTER
+			ELSE
+				winner = TIE
+			ENDIF
+ENDCASE SELECT
+
+IF(winner == PLAYER)
+	PRINT "You win"
+	wins++
+ELSE IF(winner == COMPUTER)
+	PRINT "I win!"
+	losses++
+
+ELSE
+	PRINT "We tied!"
+	ties++
+ENDIF

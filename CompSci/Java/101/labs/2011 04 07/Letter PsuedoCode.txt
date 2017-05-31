@@ -1,0 +1,41 @@
+//--------------------------------------------------------------------
+//	Author: Collin Mitchell
+//	Course: Computer Science 101
+//	Instructor: John Alampi
+//	Lab: Letter.java PsuedoCode
+//	Due Date: 7th April 2011
+//--------------------------------------------------------------------
+
+STOP = "-1"
+s = "abcdefghijklmnopqrstuvwxyz"
+char c
+userinput
+loc
+flag = true
+
+Print "Press a key from the keyboard or -1 to quit: "
+READ userInput
+
+LOOP WHILE userInput is not -1 (userInput.equals(STOP) == false)
+	lc = the lowercase of userInput
+	LOOP FOR n = 0 to LENGTH of userInput STEP 1 (for (int n = 0; n < lc.length(); n++))
+		 c = userInput character at n (c = lc.charAt(n))
+		 loc = the index of s that has c (s.indeoxOf(c));
+		 IF loc = -1
+			n = userInput's length + 1006
+			flag = false
+		END IF
+	END LOOP
+	
+	
+	IF flag is true
+		Print "The key(s) entered " + userInput + " are letter(s)
+	ELSE
+		Print "The keys entered " + userInput + " are not letter(s)
+	END IF
+	
+	Print a blank line
+	Print "Press a key from the keyboard or -1 to quit: "
+	READ userInput
+	flag = true
+END LOOP

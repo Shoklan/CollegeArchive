@@ -1,0 +1,19 @@
+//********************************************************************************
+//	Author: Collin Mitchell
+//	Course: Computer Science 101
+//	Instructor: John Alampi
+//	Class: OneToHundred PsuedoCode
+//	Due Date: 31st March 2011
+//********************************************************************************
+
+LINE = 10
+LIMIT = 100
+
+count
+
+LOOP FOR count = 1 TO LIMIT STEP 1
+	PRINT count + "\t"
+	IF count mod LINE = 0
+		PRINT
+	END IF
+END LOOP

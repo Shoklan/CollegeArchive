@@ -1,0 +1,38 @@
+PRICE_PER_2LB_BAG = 5.50f
+
+numBags = 0
+coffeeCost = 0.0
+discountRate = 0.0
+discountTotal = 0.0
+totalCharge = 0.0
+
+PRINT "Input:"
+PRINT "__Enter the number of coffee bags: "
+READ numBags
+
+coffeeCost = numBags * PRICE_PER_2LB_BAG
+
+IF (numBags >= 300)
+	discoutnRate = .30
+ELSE IF (numBags >= 200)
+	discountRate = .25
+ELSE IF (numBags >= 150)
+	discountRate = .2
+ELSE IF (numBags >= 100)
+	discountRate = .15
+ELSE IF (numBags >= 50)
+	discountRate = .10
+ELSE IF (numBags >= 25)
+	discountRate = .05
+ELSE
+	discountRate = 0
+ENDIF
+
+discountTotal = coffeeCost * discountRate
+totalCost = coffeeCost - discountTotal
+
+PRINT "\n\n"
+PRINT "Output: "
+PRINT "__Number of Bags ordered : " + numBags + " - " + coffeeCost + "\n"
+PRINT "__________________Dicount: " + (100 * discountRate) + " - " + discountTotal + "\n\n"     [14 spaces]
+PRINT "____Your total charge is : " + totalCost

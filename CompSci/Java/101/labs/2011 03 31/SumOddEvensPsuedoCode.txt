@@ -1,0 +1,39 @@
+//********************************************************************************
+//	Author: Collin Mitchell
+//	Course: Computer Science 101
+//	Instructor: John Alampi
+//	Class: SumOddEvens PsuedoCode
+//	Due Date: 31st March 2011
+//********************************************************************************
+
+zeroCount = 0
+oddCount = 0
+evenCont = 0
+digit = 0
+value = 0
+
+READ a value
+PRINT "The value entered: " + value
+value = absolute value of value
+IF value == 0
+	zeroCount = zeroCount + 1
+ELSE
+	LOOP WHILE (value > 0)
+		PRINT "The number entered: " + value
+		digit = value mod 10
+
+		IF digit == 0
+			zeroCount = zeroCount + 1
+		ELSE
+			IF digit mod 2 == 0
+				evenCount = evenCount + 1
+			ELSE digit mod 2 == 1
+				odCount = oddCOunt + 1
+		END IF
+		value = value / 10
+	END LOOP
+END IF
+
+PRINT "Output: Zero digits: " + zeroCount
+PRINT "        Even digits: " + evenCount
+PRINT "        Odd digits:  " + oddCount

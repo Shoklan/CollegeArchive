@@ -1,0 +1,14 @@
+//************************************************************************************
+//      Name: Collin Mitchell
+//      Course: Computer Science 103
+//      Instructor: John Alampi
+//      Assignment: Project2.java
+//      Due Date: October 28th, 2009
+//************************************************************************************
+
+//************************************************************************************
+//      The purpose of this class is to create a LinkedListClass. The class is used
+//      to link nodes together to create a chain of nodes containing information that
+//      can be accessed during runtime. The class contains three instance variables,
+//      two constructors, ten methods, and three abstract methods. 
+//************************************************************************************
